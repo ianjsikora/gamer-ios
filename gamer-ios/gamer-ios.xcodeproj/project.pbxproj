@@ -12,12 +12,12 @@
 		6A0C78C31AB23256009E2D4C /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C78C21AB23256009E2D4C /* FeedPostCell.swift */; };
 		6A0C78C51AB23961009E2D4C /* NewDiscussionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C78C41AB23961009E2D4C /* NewDiscussionDetailsViewController.swift */; };
 		6AA9CB7E1AB10D08007CD655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB7D1AB10D08007CD655 /* AppDelegate.swift */; };
-		6AA9CB821AB10D08007CD655 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB811AB10D08007CD655 /* SecondViewController.swift */; };
+		6AA9CB821AB10D08007CD655 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB811AB10D08007CD655 /* DiscoverViewController.swift */; };
 		6AA9CB851AB10D08007CD655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA9CB831AB10D08007CD655 /* Main.storyboard */; };
 		6AA9CB871AB10D08007CD655 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA9CB861AB10D08007CD655 /* Images.xcassets */; };
 		6AA9CB8A1AB10D08007CD655 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA9CB881AB10D08007CD655 /* LaunchScreen.xib */; };
 		6AA9CB961AB10D08007CD655 /* gamer_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB951AB10D08007CD655 /* gamer_iosTests.swift */; };
-		6AA9CBA01AB11010007CD655 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB9F1AB11010007CD655 /* ThirdViewController.swift */; };
+		6AA9CBA01AB11010007CD655 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CB9F1AB11010007CD655 /* GroupViewController.swift */; };
 		6AA9CBA21AB110EF007CD655 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9CBA11AB110EF007CD655 /* ProfileViewController.swift */; };
 		6AA9CBA61AB113CF007CD655 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA9CBA31AB113CF007CD655 /* Bolts.framework */; };
 		6AA9CBA71AB113CF007CD655 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA9CBA41AB113CF007CD655 /* FacebookSDK.framework */; };
@@ -26,6 +26,8 @@
 		6AD19E8A1AB38EAF00243183 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD19E891AB38EAF00243183 /* DataManager.swift */; };
 		6AD19E8C1AB3918700243183 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD19E8B1AB3918700243183 /* SwiftyJSON.swift */; };
 		6AD19E901AB77A0800243183 /* NewDiscussionGroupPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD19E8F1AB77A0800243183 /* NewDiscussionGroupPickerViewController.swift */; };
+		714F46311AB7AAD900F34AFA /* GroupsPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F46301AB7AAD900F34AFA /* GroupsPostCell.swift */; };
+		714F46331AB7AB1E00F34AFA /* GroupPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F46321AB7AB1E00F34AFA /* GroupPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +48,14 @@
 		6AA9CB781AB10D08007CD655 /* gamer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gamer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA9CB7C1AB10D08007CD655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA9CB7D1AB10D08007CD655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AA9CB811AB10D08007CD655 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6AA9CB811AB10D08007CD655 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		6AA9CB841AB10D08007CD655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AA9CB861AB10D08007CD655 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6AA9CB891AB10D08007CD655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6AA9CB8F1AB10D08007CD655 /* gamer-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gamer-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA9CB941AB10D08007CD655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA9CB951AB10D08007CD655 /* gamer_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamer_iosTests.swift; sourceTree = "<group>"; };
-		6AA9CB9F1AB11010007CD655 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		6AA9CB9F1AB11010007CD655 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		6AA9CBA11AB110EF007CD655 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6AA9CBA31AB113CF007CD655 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		6AA9CBA41AB113CF007CD655 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		6AD19E891AB38EAF00243183 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6AD19E8B1AB3918700243183 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		6AD19E8F1AB77A0800243183 /* NewDiscussionGroupPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDiscussionGroupPickerViewController.swift; sourceTree = "<group>"; };
+		714F46301AB7AAD900F34AFA /* GroupsPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsPostCell.swift; sourceTree = "<group>"; };
+		714F46321AB7AB1E00F34AFA /* GroupPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +186,7 @@
 		6AD19E851AB38E3800243183 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				6AA9CB811AB10D08007CD655 /* SecondViewController.swift */,
+				6AA9CB811AB10D08007CD655 /* DiscoverViewController.swift */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -190,7 +194,9 @@
 		6AD19E861AB38E3D00243183 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				6AA9CB9F1AB11010007CD655 /* ThirdViewController.swift */,
+				6AA9CB9F1AB11010007CD655 /* GroupViewController.swift */,
+				714F46301AB7AAD900F34AFA /* GroupsPostCell.swift */,
+				714F46321AB7AB1E00F34AFA /* GroupPost.swift */,
 			);
 			name = Groups;
 			sourceTree = "<group>";
@@ -313,16 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA9CBAD1AB1149D007CD655 /* LoginViewController.swift in Sources */,
+				714F46331AB7AB1E00F34AFA /* GroupPost.swift in Sources */,
 				6A0C78BF1AB20766009E2D4C /* FeedViewController.swift in Sources */,
 				6AD19E8C1AB3918700243183 /* SwiftyJSON.swift in Sources */,
-				6AA9CB821AB10D08007CD655 /* SecondViewController.swift in Sources */,
+				6AA9CB821AB10D08007CD655 /* DiscoverViewController.swift in Sources */,
+				714F46311AB7AAD900F34AFA /* GroupsPostCell.swift in Sources */,
 				6AA9CB7E1AB10D08007CD655 /* AppDelegate.swift in Sources */,
 				6A0C78C31AB23256009E2D4C /* FeedPostCell.swift in Sources */,
 				6AA9CBA21AB110EF007CD655 /* ProfileViewController.swift in Sources */,
 				6AD19E901AB77A0800243183 /* NewDiscussionGroupPickerViewController.swift in Sources */,
 				6A0C78C51AB23961009E2D4C /* NewDiscussionDetailsViewController.swift in Sources */,
 				6AD19E8A1AB38EAF00243183 /* DataManager.swift in Sources */,
-				6AA9CBA01AB11010007CD655 /* ThirdViewController.swift in Sources */,
+				6AA9CBA01AB11010007CD655 /* GroupViewController.swift in Sources */,
 				6A0C78BD1AB2039C009E2D4C /* FeedPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

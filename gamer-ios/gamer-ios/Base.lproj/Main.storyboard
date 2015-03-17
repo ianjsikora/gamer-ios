@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kfD-cf-Jjp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kfD-cf-Jjp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -325,37 +325,70 @@
             </objects>
             <point key="canvasLocation" x="2314" y="-498"/>
         </scene>
-        <!--Groups-->
-        <scene sceneID="GbO-kW-GNx">
+        <!--Gamer Groups-->
+        <scene sceneID="xt3-QA-Yxx">
             <objects>
-                <viewController title="Groups" id="IZO-w2-0iK" customClass="GroupViewController" customModule="gamer_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HQ5-AY-Rhs"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ntr-Qe-B1L"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FFX-g0-DHA">
+                <tableViewController title="Gamer Groups" id="6ba-UY-gcN" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="22" sectionFooterHeight="22" id="l0L-Z3-XUA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Groups" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eTx-Bn-1jX">
-                                <rect key="frame" x="245" y="270" width="119" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="eTx-Bn-1jX" firstAttribute="leading" secondItem="FFX-g0-DHA" secondAttribute="leading" constant="245" id="bhH-lF-80r"/>
-                            <constraint firstItem="Ntr-Qe-B1L" firstAttribute="top" secondItem="eTx-Bn-1jX" secondAttribute="bottom" constant="239" id="grr-3A-zOp"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Groups" image="Groups" id="lgc-A2-Gt4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Np9-ne-gqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="1B4-3d-XXD">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1B4-3d-XXD" id="YhK-xP-jzj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVW-hD-4dD">
+                                            <rect key="frame" x="150" y="8" width="48" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Groups" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-Pm-mBJ">
+                                            <rect key="frame" x="14" y="17" width="115" height="76"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OVW-hD-4dD" firstAttribute="leading" secondItem="YhK-xP-jzj" secondAttribute="leading" constant="150" id="Gwl-BG-MqO"/>
+                                        <constraint firstItem="bIh-Pm-mBJ" firstAttribute="top" secondItem="YhK-xP-jzj" secondAttribute="topMargin" constant="8" id="Hkc-AT-lWY"/>
+                                        <constraint firstItem="OVW-hD-4dD" firstAttribute="top" secondItem="YhK-xP-jzj" secondAttribute="topMargin" id="VZ1-yh-71S"/>
+                                        <constraint firstItem="OVW-hD-4dD" firstAttribute="leading" secondItem="bIh-Pm-mBJ" secondAttribute="trailing" constant="27" id="jwp-D4-pBO"/>
+                                        <constraint firstItem="bIh-Pm-mBJ" firstAttribute="centerY" secondItem="YhK-xP-jzj" secondAttribute="centerY" id="krB-yi-Jm3"/>
+                                        <constraint firstItem="bIh-Pm-mBJ" firstAttribute="leading" secondItem="YhK-xP-jzj" secondAttribute="leadingMargin" id="rMX-lZ-mIy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="OVW-hD-4dD" secondAttribute="bottom" constant="71.5" id="v5G-Es-SH0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6ba-UY-gcN" id="h1P-kb-eOl"/>
+                            <outlet property="delegate" destination="6ba-UY-gcN" id="erq-Er-cLe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="uJZ-qJ-ulu"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3i-Fr-0XQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2314" y="188"/>
+            <point key="canvasLocation" x="3135" y="212"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="yGj-Ut-8a6">
+            <objects>
+                <navigationController id="6y5-Hc-aDK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Groups" image="Groups" id="eM3-K2-DPh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pey-eY-3Yp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6ba-UY-gcN" kind="relationship" relationship="rootViewController" id="SM1-Cq-VyO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbg-VH-NCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="212"/>
         </scene>
         <!--Profile-->
         <scene sceneID="hNx-N1-FJM">
@@ -447,7 +480,7 @@
                     <connections>
                         <segue destination="RPH-BJ-EUt" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="IZO-w2-0iK" kind="relationship" relationship="viewControllers" id="aU7-HD-4OW"/>
+                        <segue destination="6y5-Hc-aDK" kind="relationship" relationship="viewControllers" id="nPm-Gi-HJl"/>
                         <segue destination="fpI-q5-S1y" kind="relationship" relationship="viewControllers" id="wtz-xm-wTA"/>
                     </connections>
                 </tabBarController>
